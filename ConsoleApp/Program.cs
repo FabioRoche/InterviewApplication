@@ -1,4 +1,7 @@
 ﻿using System;
+using SystemWrappers;
+using FilesService;
+using Unity;
 
 namespace ConsoleApp
 {
@@ -6,6 +9,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            IFilesService filesService = Bootstrapper.UnityContainer.Resolve<IFilesService>();
+
             Console.WriteLine("Hello World!");
         }
     }
