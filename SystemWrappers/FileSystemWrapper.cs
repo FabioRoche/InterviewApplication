@@ -6,8 +6,7 @@ namespace SystemWrappers
     {
         public string[] GetFiles(string directory)
         {
-            var timeAsString = DateTime.Now.ToLongTimeString();
-            return new string[] { @"c:\MyDir\localFile"+ timeAsString + ".txt", @"c:\MyDir\localFile1.txt", @"c:\MyDir\localFile2.txt" };
+            return new string[] { @"c:\MyDir\localFile.txt", @"c:\MyDir\localFile1.txt", @"c:\MyDir\localFile2.txt" };
         }
 
         public string GetFileContent(string fileName)
