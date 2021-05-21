@@ -1,3 +1,5 @@
+[![.NET](https://github.com/FabioRoche/InterviewApplication/actions/workflows/dotnet.yml/badge.svg)](https://github.com/FabioRoche/InterviewApplication/actions/workflows/dotnet.yml)
+
 Explain Application: 
 Aggregates all files from several sources (File system and web folder)
 
