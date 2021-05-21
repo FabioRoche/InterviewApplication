@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace SystemWrappers
 {
-    public class FileSystemTimeStampedWrapper
+    public class FileSystemTimeStampedWrapper : IFileSystemWrapper
     {
         public string[] GetFiles(string directory)
         {
@@ -12,7 +12,7 @@ namespace SystemWrappers
             return new string[] { @"c:\MyDir\localFile" + timeAsString + ".txt" };
         }
 
-        public string GetFileContent(string thefilenameTxt)
+        public string GetFileContent(string fileName)
         {
             // TODO: The same as the FileSystemWrapper
             throw new NotImplementedException();

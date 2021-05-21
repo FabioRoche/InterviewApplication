@@ -20,6 +20,10 @@ X - fix test GetFiles_SomeDirectoryAtTimeNow_SameTimeStampedFilename
 
 X - (ConsoleApp) - instantiate FilesService using Unity Container
 (Does he know how a dependency injection container works?)
+            UnityContainer.RegisterType<IFilesService, FilesService>();
+            UnityContainer.RegisterType<IFileSystemWrapper, FileSystemWrapper>();
+            UnityContainer.RegisterType<IWebClientWrapper, WebClientWrapper>();
 
-X - (ConsoleApp) -  print each filename followed by its content
 
+X - (ConsoleApp) -  Log each filename followed by its content
+(Only console write line)

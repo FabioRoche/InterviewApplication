@@ -11,10 +11,6 @@
         static Bootstrapper()
         {
             UnityContainer = new UnityContainer();
-
-            UnityContainer.RegisterType<IFilesService, FilesService>();
-            UnityContainer.RegisterType<IFileSystemWrapper, FileSystemWrapper>();
-            UnityContainer.RegisterType<IWebClientWrapper, WebClientWrapper>();
         }
     }
 }
